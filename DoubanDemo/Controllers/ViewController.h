@@ -14,8 +14,14 @@
     NSString *url;
     BookService *bookService;
 }
-- (IBAction)btnBack:(id)sender;
 @property(strong,nonatomic) NSMutableArray *books;
-
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBook;
+@property (weak, nonatomic) IBOutlet UITableView *bookList;
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+-(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar;
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 @end
 

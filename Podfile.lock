@@ -14,12 +14,14 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - Cedar (1.0)
   - SDWebImage (4.3.3):
     - SDWebImage/Core (= 4.3.3)
   - SDWebImage/Core (4.3.3)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - Cedar (from `https://github.com/pivotal/cedar.git`)
   - SDWebImage (~> 4.3.0)
 
 SPEC REPOS:
@@ -27,10 +29,20 @@ SPEC REPOS:
     - AFNetworking
     - SDWebImage
 
+EXTERNAL SOURCES:
+  Cedar:
+    :git: https://github.com/pivotal/cedar.git
+
+CHECKOUT OPTIONS:
+  Cedar:
+    :commit: 176a091e663ccbe4b7a3139e188b55b0a2d329d0
+    :git: https://github.com/pivotal/cedar.git
+
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Cedar: 6adf2e110f90312d20ff1ff122b9a8cb76dbab27
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
 
-PODFILE CHECKSUM: 73760a2d37733caadc0a1f9e0ef3b0f76a725018
+PODFILE CHECKSUM: 94247f2fa36a1ce95e99edd2f5d68e40b4cb4ed7
 
 COCOAPODS: 1.5.2

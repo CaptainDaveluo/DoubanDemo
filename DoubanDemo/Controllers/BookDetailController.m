@@ -45,7 +45,4 @@
     [self.navigationController popViewControllerAnimated:true];
 }
 
--(void)didReceiveMemoryWarning{
-    [super didReceiveMemoryWarning];
-}
 @end

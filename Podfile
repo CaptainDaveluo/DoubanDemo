@@ -10,6 +10,7 @@ target 'DoubanDemo' do
 
   target 'DoubanDemoTests' do
     inherit! :search_paths
+    pod 'Cedar', git: 'https://github.com/pivotal/cedar.git'
     # Pods for testing
   end
 

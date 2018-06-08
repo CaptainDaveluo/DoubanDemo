@@ -15,8 +15,6 @@
 
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate>
-@property (weak, nonatomic) IBOutlet UISearchBar *searchBook;
-@property (weak, nonatomic) IBOutlet UITableView *bookList;
 
 @end
 
@@ -25,6 +23,32 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    //test plist
+//    NSString *path = [[NSBundle mainBundle]pathForResource:@"NewPlist" ofType:@"plist"];
+//    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
+//    for(NSString * key in dict.allKeys){
+//        NSLog(@"%@ : %@",key,[dict objectForKey:key]);
+//    }
+//
+//    //test sandbox
+//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//    NSString *plistPath1 = [paths objectAtIndex:0];
+//    NSString *filename = [plistPath1 stringByAppendingPathComponent:@"my.plist"];
+//    NSDictionary * dic = @{@"my":@"test"};
+//    //write to file
+//    [dic writeToFile:filename atomically:YES];
+//    NSDictionary *getDic = [NSDictionary dictionaryWithContentsOfFile:filename];
+//    NSLog(@"%@",getDic);
+    
+    //test UserDefault
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:@"value1" forKey:@"test1"];
+    [defaults synchronize];
+    NSString * str = [defaults objectForKey:@"test1"];
+    NSLog(@"%@",str);
+    
+    
+    
     _searchBook.barTintColor=[UIColor colorWithRed:67/255.0 green:189/255.0 blue:86/255.0 alpha:1];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     url = @"https://api.douban.com/v2/book/search";
@@ -33,18 +57,28 @@
     _bookList.delegate=self;
     _bookList.dataSource=self;
     bookService = [[BookService alloc]init];
-    [bookService getRequestWithURL:url withKey:@"python" withTableView:_bookList withData:books];
+    [bookService getRequestWithURL:url withKey:@"教育" completion:^(NSMutableArray *data) {
+        if(data!=nil){
+            self.books=data;
+            [self.bookList reloadData];
+        }else{
+            NSLog(@"oops,request failed");
+        }
+    }];
 }
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
     NSString *key = searchBar.text;
-    if(![key isEqualToString:@""])
-        [bookService getRequestWithURL:url withKey:key withTableView:_bookList withData:books];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    if(![key isEqualToString:@""]){
+        [bookService getRequestWithURL:url withKey:key completion:^(NSMutableArray *data) {
+            if(data!=nil){
+                self.books=data;
+                [self.bookList reloadData];
+            }else{
+                NSLog(@"oops,request failed");
+            }
+        }];
+    }
 }
 
 
@@ -88,6 +122,4 @@
     [self.navigationController pushViewController:detail animated:YES];
 }
 
-- (IBAction)btnBack:(id)sender {
-}
 @end

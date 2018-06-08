@@ -5,12 +5,13 @@
 //  Created by dave.luo on 2018/5/23.
 //  Copyright © 2018 dave.luo. All rights reserved.
 //
+#import <AFNetworking/AFNetworking.h>
 
-typedef void(^CompleteImageBlock)(NSString *parameter);
 @interface BookService:NSObject{
-    
+    AFHTTPSessionManager *manager;
 }
+@property(nonatomic,strong) AFHTTPSessionManager *manager;
 @property(nonatomic,weak) NSMutableArray *books;
-@property(nonatomic,strong) CompleteImageBlock block;
--(void)getRequestWithURL:(NSString *)urlStr withKey:(NSString *)keyWord withTableView:(UITableView *)tableView withData:(NSMutableArray *)datas;
+-(void)getRequestWithURL:(NSString *)urlStr withKey:(NSString *)keyWord completion:(void (^)(NSMutableArray *data)) complete;
+-(instancetype)initWithManager:(AFHTTPSessionManager *)apm;
 @end

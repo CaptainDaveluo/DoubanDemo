@@ -11,23 +11,29 @@
 #import "BookService.h"
 #import "BookInfo.h"
 
+
+
 @implementation BookService
 @synthesize books;
-@synthesize block;
-
-//请求书记搜索服务
--(void)getRequestWithURL:(NSString *)urlStr withKey:(NSString *)keyWord withTableView:(UITableView *)tableView withData:(NSMutableArray *)datas{
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+@synthesize manager;
+//Get book searching result
+-(instancetype)initWithManager:(AFHTTPSessionManager *)apm{
+    if(self=[super init]){
+        self.manager = apm;
+    }
+    return self;
+}
+-(void)getRequestWithURL:(NSString *)urlStr withKey:(NSString *)keyWord completion:(void (^)(NSMutableArray *data))complete{
+    if(manager==nil)
+        manager = [AFHTTPSessionManager manager];
     NSLog(@"%@",keyWord);
-    [datas removeAllObjects];
+    NSMutableArray *datas = [NSMutableArray new];
     NSDictionary *dict=@{
                          @"q":keyWord,
                          @"count":@10
                          };
-    manager.responseSerializer = [AFJSONResponseSerializer serializer];
-    [manager GET:urlStr parameters:dict progress:^(NSProgress * _Nonnull downloadProgress){
-        
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject){
+ 
+    [manager GET:urlStr parameters:dict progress:^(NSProgress * _Nonnull downloadProgress) {} success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject){
         //NSMutableArray *books=[NSMutableArray new];
         NSArray *json= responseObject[@"books"];
         
@@ -36,12 +42,12 @@
             NSLog(@"%@",b.author[0]);
             [datas addObject:b];
         }
-        [tableView reloadData];
+        complete(datas);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error){
         NSLog(@"返回失败");
         NSLog(@"%@",error);
+        complete(nil);
     }];
 }
-
 
 @end

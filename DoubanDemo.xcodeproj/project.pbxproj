@@ -10,11 +10,23 @@
 		000BD5F61E6C0CB7DA8B9E24 /* libPods-DoubanDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54095C6DF5A46CD12F5EAD73 /* libPods-DoubanDemoTests.a */; };
 		067F595093C409D522785AFA /* libPods-DoubanDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B0BC644AE7E1A802F8FE75 /* libPods-DoubanDemo.a */; };
 		A14EBDE5B4300CEEBB0F6549 /* libPods-DoubanDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A547978CB43B1CF9287F9ED6 /* libPods-DoubanDemoUITests.a */; };
+		C71C50FB20C6845A0041FAE1 /* FirstLoadViewSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = C71C50FA20C6845A0041FAE1 /* FirstLoadViewSpec.mm */; };
+		C71C50FE20C685040041FAE1 /* FirstLoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = C71C50FD20C685040041FAE1 /* FirstLoadView.m */; };
+		C71C510120C76F490041FAE1 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C71C510020C76F490041FAE1 /* ContentViewController.m */; };
+		C71C510320C7B76D0041FAE1 /* ContentViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = C71C510220C7B76D0041FAE1 /* ContentViewControllerSpec.mm */; };
+		C71C510620C7D3550041FAE1 /* DataUtilSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = C71C510520C7D3550041FAE1 /* DataUtilSpec.mm */; };
+		C71C510920C7D3B50041FAE1 /* DataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C71C510820C7D3B50041FAE1 /* DataUtil.m */; };
 		C75CAC3220B536DE004E2FB8 /* BookService.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CAC3120B536DE004E2FB8 /* BookService.m */; };
 		C75CAC3420B5372C004E2FB8 /* BookInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CAC3320B5372C004E2FB8 /* BookInfo.m */; };
-		C75CAC4020B656C6004E2FB8 /* UIImageView+Async.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CAC3F20B656C6004E2FB8 /* UIImageView+Async.m */; };
 		C75CAC4520B66618004E2FB8 /* BookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CAC4420B66618004E2FB8 /* BookTableViewCell.m */; };
 		C75CAC4820B68F8B004E2FB8 /* BookDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CAC4720B68F8B004E2FB8 /* BookDetailController.m */; };
+		C7A9BFAA20BB996400495E1A /* AppDelegateSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = C7A9BFA820BB972900495E1A /* AppDelegateSpec.mm */; };
+		C7A9BFAD20BBA06800495E1A /* BookServiceSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = C7A9BFAB20BB9C4900495E1A /* BookServiceSpec.mm */; };
+		C7A9BFC120BD39C700495E1A /* DoubanDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CD37B420B52477009A6C5E /* DoubanDemoUITests.m */; };
+		C7A9BFC620BE35EB00495E1A /* ViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = C7A9BFAE20BBAAEF00495E1A /* ViewControllerSpec.mm */; };
+		C7A9BFC720BE35EB00495E1A /* BookDetailControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = C7A9BFBC20BD224100495E1A /* BookDetailControllerSpec.mm */; };
+		C7B0D9C220CA0F430073595D /* LoginControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = C7B0D9C120CA0F430073595D /* LoginControllerSpec.mm */; };
+		C7B0D9C520CA10EA0073595D /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B0D9C420CA10EA0073595D /* LoginController.m */; };
 		C7CD379220B52477009A6C5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CD379120B52477009A6C5E /* AppDelegate.m */; };
 		C7CD379520B52477009A6C5E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CD379420B52477009A6C5E /* ViewController.m */; };
 		C7CD379820B52477009A6C5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CD379620B52477009A6C5E /* Main.storyboard */; };
@@ -22,7 +34,7 @@
 		C7CD379D20B52477009A6C5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CD379B20B52477009A6C5E /* LaunchScreen.storyboard */; };
 		C7CD37A020B52477009A6C5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CD379F20B52477009A6C5E /* main.m */; };
 		C7CD37AA20B52477009A6C5E /* DoubanDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CD37A920B52477009A6C5E /* DoubanDemoTests.m */; };
-		C7CD37B520B52477009A6C5E /* DoubanDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CD37B420B52477009A6C5E /* DoubanDemoUITests.m */; };
+		C7F1E52220BFD2090095D30A /* NewPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7F1E52120BFD2090095D30A /* NewPlist.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,14 +62,28 @@
 		80B0BC644AE7E1A802F8FE75 /* libPods-DoubanDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoubanDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A547978CB43B1CF9287F9ED6 /* libPods-DoubanDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoubanDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0EB55AFADFFAD49BBD5A53D /* Pods-DoubanDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoubanDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoubanDemo/Pods-DoubanDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C71C50FA20C6845A0041FAE1 /* FirstLoadViewSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FirstLoadViewSpec.mm; sourceTree = "<group>"; };
+		C71C50FC20C684770041FAE1 /* FirstLoadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstLoadView.h; sourceTree = "<group>"; };
+		C71C50FD20C685040041FAE1 /* FirstLoadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstLoadView.m; sourceTree = "<group>"; };
+		C71C50FF20C76EE50041FAE1 /* ContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		C71C510020C76F490041FAE1 /* ContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
+		C71C510220C7B76D0041FAE1 /* ContentViewControllerSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ContentViewControllerSpec.mm; sourceTree = "<group>"; };
+		C71C510520C7D3550041FAE1 /* DataUtilSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DataUtilSpec.mm; sourceTree = "<group>"; };
+		C71C510720C7D3670041FAE1 /* DataUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataUtil.h; sourceTree = "<group>"; };
+		C71C510820C7D3B50041FAE1 /* DataUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataUtil.m; sourceTree = "<group>"; };
 		C75CAC3120B536DE004E2FB8 /* BookService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookService.m; sourceTree = "<group>"; };
 		C75CAC3320B5372C004E2FB8 /* BookInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookInfo.m; sourceTree = "<group>"; };
-		C75CAC3F20B656C6004E2FB8 /* UIImageView+Async.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Async.m"; sourceTree = "<group>"; };
-		C75CAC4120B65705004E2FB8 /* UIImageView+Async.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Async.h"; sourceTree = "<group>"; };
 		C75CAC4320B665E8004E2FB8 /* BookTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookTableViewCell.h; sourceTree = "<group>"; };
 		C75CAC4420B66618004E2FB8 /* BookTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookTableViewCell.m; sourceTree = "<group>"; };
 		C75CAC4620B68F62004E2FB8 /* BookDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookDetailController.h; sourceTree = "<group>"; };
 		C75CAC4720B68F8B004E2FB8 /* BookDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookDetailController.m; sourceTree = "<group>"; };
+		C7A9BFA820BB972900495E1A /* AppDelegateSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegateSpec.mm; path = DoubanDemoTests/AppDelegateSpec.mm; sourceTree = SOURCE_ROOT; };
+		C7A9BFAB20BB9C4900495E1A /* BookServiceSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BookServiceSpec.mm; sourceTree = "<group>"; };
+		C7A9BFAE20BBAAEF00495E1A /* ViewControllerSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewControllerSpec.mm; sourceTree = "<group>"; };
+		C7A9BFBC20BD224100495E1A /* BookDetailControllerSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BookDetailControllerSpec.mm; sourceTree = "<group>"; };
+		C7B0D9C120CA0F430073595D /* LoginControllerSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LoginControllerSpec.mm; sourceTree = "<group>"; };
+		C7B0D9C320CA10900073595D /* LoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		C7B0D9C420CA10EA0073595D /* LoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 		C7CD378D20B52477009A6C5E /* DoubanDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoubanDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CD379020B52477009A6C5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C7CD379120B52477009A6C5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -76,6 +102,7 @@
 		C7CD37B620B52477009A6C5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7CD37C320B52E05009A6C5E /* BookService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookService.h; sourceTree = "<group>"; };
 		C7CD37C520B52E66009A6C5E /* BookInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookInfo.h; sourceTree = "<group>"; };
+		C7F1E52120BFD2090095D30A /* NewPlist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = NewPlist.plist; sourceTree = "<group>"; };
 		D5A980671CCF5380B37DBE00 /* Pods-DoubanDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoubanDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoubanDemoTests/Pods-DoubanDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		E0229DEBEB2F9EEF562501DB /* Pods-DoubanDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoubanDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoubanDemoTests/Pods-DoubanDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,13 +158,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C75CAC3520B64AA8004E2FB8 /* Utils */ = {
+		C71C510420C7D3350041FAE1 /* Utls */ = {
 			isa = PBXGroup;
 			children = (
-				C75CAC3F20B656C6004E2FB8 /* UIImageView+Async.m */,
-				C75CAC4120B65705004E2FB8 /* UIImageView+Async.h */,
+				C71C510720C7D3670041FAE1 /* DataUtil.h */,
+				C71C510820C7D3B50041FAE1 /* DataUtil.m */,
 			);
-			path = Utils;
+			path = Utls;
 			sourceTree = "<group>";
 		};
 		C75CAC4220B665BF004E2FB8 /* SelfViewComponent */ = {
@@ -156,6 +183,12 @@
 				C7CD379420B52477009A6C5E /* ViewController.m */,
 				C75CAC4620B68F62004E2FB8 /* BookDetailController.h */,
 				C75CAC4720B68F8B004E2FB8 /* BookDetailController.m */,
+				C71C50FC20C684770041FAE1 /* FirstLoadView.h */,
+				C71C50FD20C685040041FAE1 /* FirstLoadView.m */,
+				C71C50FF20C76EE50041FAE1 /* ContentViewController.h */,
+				C71C510020C76F490041FAE1 /* ContentViewController.m */,
+				C7B0D9C320CA10900073595D /* LoginController.h */,
+				C7B0D9C420CA10EA0073595D /* LoginController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -185,9 +218,9 @@
 		C7CD378F20B52477009A6C5E /* DoubanDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C71C510420C7D3350041FAE1 /* Utls */,
 				C75CAC4920B7D026004E2FB8 /* Controllers */,
 				C75CAC4220B665BF004E2FB8 /* SelfViewComponent */,
-				C75CAC3520B64AA8004E2FB8 /* Utils */,
 				C7CD37C420B52E49009A6C5E /* Model */,
 				C7CD37C220B52DE8009A6C5E /* Service */,
 				C7CD379020B52477009A6C5E /* AppDelegate.h */,
@@ -196,6 +229,7 @@
 				C7CD379920B52477009A6C5E /* Assets.xcassets */,
 				C7CD379B20B52477009A6C5E /* LaunchScreen.storyboard */,
 				C7CD379E20B52477009A6C5E /* Info.plist */,
+				C7F1E52120BFD2090095D30A /* NewPlist.plist */,
 				C7CD379F20B52477009A6C5E /* main.m */,
 			);
 			path = DoubanDemo;
@@ -204,7 +238,15 @@
 		C7CD37A820B52477009A6C5E /* DoubanDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				C7A9BFAB20BB9C4900495E1A /* BookServiceSpec.mm */,
+				C7A9BFA820BB972900495E1A /* AppDelegateSpec.mm */,
 				C7CD37A920B52477009A6C5E /* DoubanDemoTests.m */,
+				C7A9BFAE20BBAAEF00495E1A /* ViewControllerSpec.mm */,
+				C7A9BFBC20BD224100495E1A /* BookDetailControllerSpec.mm */,
+				C71C50FA20C6845A0041FAE1 /* FirstLoadViewSpec.mm */,
+				C71C510220C7B76D0041FAE1 /* ContentViewControllerSpec.mm */,
+				C71C510520C7D3550041FAE1 /* DataUtilSpec.mm */,
+				C7B0D9C120CA0F430073595D /* LoginControllerSpec.mm */,
 				C7CD37AB20B52477009A6C5E /* Info.plist */,
 			);
 			path = DoubanDemoTests;
@@ -345,6 +387,7 @@
 			files = (
 				C7CD379D20B52477009A6C5E /* LaunchScreen.storyboard in Resources */,
 				C7CD379A20B52477009A6C5E /* Assets.xcassets in Resources */,
+				C7F1E52220BFD2090095D30A /* NewPlist.plist in Resources */,
 				C7CD379820B52477009A6C5E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,12 +470,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C75CAC4020B656C6004E2FB8 /* UIImageView+Async.m in Sources */,
 				C75CAC3220B536DE004E2FB8 /* BookService.m in Sources */,
+				C7B0D9C520CA10EA0073595D /* LoginController.m in Sources */,
+				C71C510920C7D3B50041FAE1 /* DataUtil.m in Sources */,
 				C7CD379520B52477009A6C5E /* ViewController.m in Sources */,
+				C71C510120C76F490041FAE1 /* ContentViewController.m in Sources */,
 				C75CAC4820B68F8B004E2FB8 /* BookDetailController.m in Sources */,
 				C7CD37A020B52477009A6C5E /* main.m in Sources */,
 				C75CAC3420B5372C004E2FB8 /* BookInfo.m in Sources */,
+				C71C50FE20C685040041FAE1 /* FirstLoadView.m in Sources */,
 				C75CAC4520B66618004E2FB8 /* BookTableViewCell.m in Sources */,
 				C7CD379220B52477009A6C5E /* AppDelegate.m in Sources */,
 			);
@@ -442,7 +488,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7A9BFAD20BBA06800495E1A /* BookServiceSpec.mm in Sources */,
+				C71C510320C7B76D0041FAE1 /* ContentViewControllerSpec.mm in Sources */,
+				C71C510620C7D3550041FAE1 /* DataUtilSpec.mm in Sources */,
 				C7CD37AA20B52477009A6C5E /* DoubanDemoTests.m in Sources */,
+				C71C50FB20C6845A0041FAE1 /* FirstLoadViewSpec.mm in Sources */,
+				C7A9BFAA20BB996400495E1A /* AppDelegateSpec.mm in Sources */,
+				C7A9BFC620BE35EB00495E1A /* ViewControllerSpec.mm in Sources */,
+				C7B0D9C220CA0F430073595D /* LoginControllerSpec.mm in Sources */,
+				C7A9BFC720BE35EB00495E1A /* BookDetailControllerSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,7 +504,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7CD37B520B52477009A6C5E /* DoubanDemoUITests.m in Sources */,
+				C7A9BFC120BD39C700495E1A /* DoubanDemoUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +582,8 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -585,6 +641,8 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -605,6 +663,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
 				INFOPLIST_FILE = DoubanDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -622,6 +682,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
 				INFOPLIST_FILE = DoubanDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

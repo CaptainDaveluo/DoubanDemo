@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "LoginController.h"
+#import "DataUtil.h"
 
 @interface AppDelegate ()
 
@@ -21,6 +22,12 @@
 //    ViewController *viewController = [[ViewController alloc]init];
 //    UINavigationController *navCtrl = [[UINavigationController alloc]initWithRootViewController:viewController];
 //    [self.window setRootViewController:navCtrl];
+    if(![DataUtil isFirstLoad])
+    {
+        UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        LoginController *loginView = [storyBoard instantiateViewControllerWithIdentifier:@"loginView"];
+        [self.window setRootViewController:loginView];
+    }
     return YES;
 }
 

@@ -18,4 +18,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *bookPrice;
 @property (weak, nonatomic) IBOutlet UILabel *bookCatalog;
 @property (weak, nonatomic) IBOutlet UIButton *btnBack;
+-(IBAction)back:(UIButton *)sender;
 @end
