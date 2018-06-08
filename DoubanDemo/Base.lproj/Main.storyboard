@@ -298,7 +298,7 @@
                                     <constraint firstAttribute="height" constant="20" id="5cF-hc-Zdc"/>
                                     <constraint firstAttribute="width" constant="20" id="RQ5-4a-0mi"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Button" image="check-box-blank"/>
                                 <connections>
                                     <action selector="didSaveInfo:" destination="MrK-c1-4bM" eventType="touchUpInside" id="s7J-tu-OJW"/>
                                 </connections>
@@ -350,6 +350,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="check-box-blank" width="200" height="200"/>
         <image name="head" width="564" height="564"/>
     </resources>
 </document>

@@ -12,6 +12,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *tfUserName;
 @property (weak, nonatomic) IBOutlet UITextField *tfPassWord;
 @property (weak, nonatomic) IBOutlet UIButton *saveInfo;
+@property(nonatomic) BOOL didSaveInfo;
+-(IBAction)didSaveInfo:(id)sender;
 -(BOOL)validate:(NSString *)userName;
 -(BOOL)checkEmptyUserName:(NSString *)userName andPwd:(NSString *)userPass;
 @end

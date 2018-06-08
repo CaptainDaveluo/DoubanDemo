@@ -142,6 +142,16 @@ describe(@"LoginController", ^{
             });
         });
     });
+    
+    describe(@"test save info", ^{
+        beforeEach(^{
+            
+        });
+        it(@"should didSaveInfo change status",^{
+            [loginController didSaveInfo:nil];
+            
+        });
+    });
 });
 
 SPEC_END

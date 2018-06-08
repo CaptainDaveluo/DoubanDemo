@@ -12,6 +12,7 @@
 @implementation LoginController
 @synthesize tfPassWord;
 @synthesize tfUserName;
+@synthesize didSaveInfo;
 
 - (void)viewDidLoad{
     [super viewDidLoad];
@@ -39,6 +40,16 @@
     if(userPass==nil || [userPass isEqualToString:@""])
         isPassEmpty=YES;
     return !(isUserEmpty || isPassEmpty);
+}
+
+-(IBAction)didSaveInfo:(id)sender{
+    if(didSaveInfo == YES){
+        didSaveInfo=NO;
+        [_saveInfo setImage:[UIImage imageNamed:@"check-box-blank.png"] forState:UIControlStateNormal];
+    }else{
+        didSaveInfo=YES;
+        [_saveInfo setImage:[UIImage imageNamed:@"check_box.png"] forState:UIControlStateNormal];
+    }
 }
 
 
